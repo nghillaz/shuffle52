@@ -18,7 +18,7 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## Syle Guide
+## Style Guide
 
 NAMING
 
