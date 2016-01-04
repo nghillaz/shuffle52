@@ -21,24 +21,28 @@ TODO: Write usage instructions
 ## Syle Guide
 
 NAMING
-Control Functions	  - snake_case
-XAML Objects		    - CamelCase (first uppercase)
-Classes/Namespaces	- CamelCase (first uppercase)
-C# Objects		      - camelCase (first lowercase)
+
+1. Control Functions	  - snake_case
+2. XAML Objects		    - CamelCase (first uppercase)
+3. Classes/Namespaces	- CamelCase (first uppercase)
+4. C# Objects		      - camelCase (first lowercase)
 
 FORMATTING
-C# Functions		    - empty line between each function
-XAML Objects		    - no empty line
-Curly Braces		    - on next line
-Indentation		      - 3 spaces
+
+1. C# Functions		    - empty line between each function
+2. XAML Objects		    - no empty line
+3. Curly Braces		    - on next line
+4. Indentation		      - 3 spaces
 
 COMMENTING
-Function Header		  - brief description using /* */
-In-line			        - use // for single line and /* */ for multi-line
+
+1. Function Header		  - brief description using /* */
+2. In-line			        - use // for single line and /* */ for multi-line
 
 MISCELLANEOUS
-++/-- operators encouraged (suffix only)
-type-cast with "as" operator
+
+1. ++/-- operators encouraged (suffix only)
+2. type-cast with "as" operator
 
 ## Credits
 
