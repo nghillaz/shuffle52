@@ -18,9 +18,27 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
+## Syle Guide
 
-TODO: Write history
+NAMING
+Control Functions	  - snake_case
+XAML Objects		    - CamelCase (first uppercase)
+Classes/Namespaces	- CamelCase (first uppercase)
+C# Objects		      - camelCase (first lowercase)
+
+FORMATTING
+C# Functions		    - empty line between each function
+XAML Objects		    - no empty line
+Curly Braces		    - on next line
+Indentation		      - 3 spaces
+
+COMMENTING
+Function Header		  - brief description using /* */
+In-line			        - use // for single line and /* */ for multi-line
+
+MISCELLANEOUS
+++/-- operators encouraged (suffix only)
+type-cast with "as" operator
 
 ## Credits
 
