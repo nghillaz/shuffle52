@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace shuffle52
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for GameEditor.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class GameEditor : Page
     {
-        public MainWindow()
+        public GameEditor()
         {
             InitializeComponent();
         }
+
+        //void add_player(object sender, RoutedEventArgs e)
+        //{
+        //    PlayerListBox.
+        //}
     }
 }

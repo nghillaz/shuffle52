@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace shuffle52
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for GamePlayer.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class GamePlayer : Page
     {
-        public MainWindow()
+        public GamePlayer()
         {
             InitializeComponent();
         }
