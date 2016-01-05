@@ -41,8 +41,8 @@ namespace shuffle52
             }
         }
 
-        /* handles Add -- Okay buttons */
-        void click_add_okay(object sender, RoutedEventArgs e)
+        /* handles Okay buttons */
+        void click_okay(object sender, RoutedEventArgs e)
         {
             if ((sender as Button).Name == "AddPlayerOkayButton")
             {
@@ -53,11 +53,17 @@ namespace shuffle52
             {
                 DeckListBox.Items.Add(DeckNameTextBox.Text);
                 AddDeckPopup.IsOpen = false;
-            }  
+            }
+            else if ((sender as Button).Name == "EditNameOkayButton")
+            {
+                CurrentItem.Content = EditNameTextBox.Text;
+
+                EditNamePopup.IsOpen = false;
+            }
         }
 
-        /* handles Add Player -- Cancel button */
-        void click_add_cancel(object sender, RoutedEventArgs e)
+        /* handles Cancel buttons */
+        void click_cancel(object sender, RoutedEventArgs e)
         {
             if ((sender as Button).Name == "AddPlayerCancelButton")
             {
@@ -66,13 +72,18 @@ namespace shuffle52
             else if ((sender as Button).Name == "AddDeckCancelButton")
             {
                 AddDeckPopup.IsOpen = false;
-            }  
+            }
+            else if ((sender as Button).Name == "EditNameCancelButton")
+            {
+                EditNamePopup.IsOpen = false;
+            }
         }
 
         /* handles selecting a Player on the Player list */
         void select_player(object sender, RoutedEventArgs e)
         {
             DeleteButton.IsEnabled = true;
+            EditNameButton.IsEnabled = true;
 
             CurrentItem.Content = (sender as ListBox).SelectedItem.ToString();
         }
@@ -81,6 +92,15 @@ namespace shuffle52
         void select_deck(object sender, RoutedEventArgs e)
         {
             DeleteButton.IsEnabled = true;
+            EditNameButton.IsEnabled = true;
+
+            CurrentItem.Content = (sender as ListBox).SelectedItem.ToString();
+        }
+
+        /* handles the Edit Name button */
+        void click_edit_name(object sender, RoutedEventArgs e)
+        {
+            EditNamePopup.IsOpen = true;
         }
 
         /* handles the Delete button */

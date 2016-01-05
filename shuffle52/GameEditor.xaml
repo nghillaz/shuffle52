@@ -55,9 +55,11 @@
                         <Label HorizontalAlignment="Center" VerticalAlignment="Center">Properties</Label>
                     </Border>
                     <!-- Current Item Panel -->
-                    <StackPanel Grid.Column="2" Grid.Row="1" Orientation="Horizontal">
-                        <Label>Current Item:</Label>
-                        <Label Name="CurrentItem"></Label>
+                    <StackPanel Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" Orientation="Vertical">
+                        <Label HorizontalAlignment="Center">Current Item:</Label>
+                        <Label Name="CurrentItem" HorizontalAlignment="Center"> None </Label>
+                        <!-- Edit Name Button -->
+                        <Button Name="EditNameButton" Width="50" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="false" Click="click_edit_name">edit</Button>
                     </StackPanel>
                     <!-- Delete Button -->
                     <Button Name="DeleteButton" Grid.Column="2" Grid.Row="7" Width="200" Height="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" IsEnabled="False">Delete</Button>
@@ -71,8 +73,8 @@
                                  Enter Player Name Here
                              </TextBox>
                             <StackPanel Orientation="Horizontal">
-                                <Button Name="AddPlayerOkayButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_add_okay">Okay</Button>
-                                <Button Name="AddPlayerCancelButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_add_cancel">Cancel</Button>
+                                <Button Name="AddPlayerOkayButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_okay">Okay</Button>
+                                <Button Name="AddPlayerCancelButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_cancel">Cancel</Button>
                             </StackPanel>
                         </StackPanel>
                     </Popup>
@@ -86,8 +88,22 @@
                                 Enter Deck Name Here
                             </TextBox>
                             <StackPanel Orientation="Horizontal">
-                                <Button Name="AddDeckOkayButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_add_okay">Okay</Button>
-                                <Button Name="AddDeckCancelButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_add_cancel">Cancel</Button>
+                                <Button Name="AddDeckOkayButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_okay">Okay</Button>
+                                <Button Name="AddDeckCancelButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_cancel">Cancel</Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </Popup>
+                    <!-- Edit Name Popup -->
+                    <Popup Name="EditNamePopup" Height="75" Width="200" PlacementRectangle="800,0,0,0" Placement="Right">
+                        <StackPanel>
+                            <Label Height="25" Width="200" Background="Gray">
+                                Name:
+                            </Label>
+                            <TextBox Name="EditNameTextBox" Height="25" Width="200" >
+                            </TextBox>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Name="EditNameOkayButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_okay">Okay</Button>
+                                <Button Name="EditNameCancelButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_cancel">Cancel</Button>
                             </StackPanel>
                         </StackPanel>
                     </Popup>
