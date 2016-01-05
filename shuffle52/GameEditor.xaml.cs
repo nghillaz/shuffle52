@@ -27,7 +27,7 @@ namespace shuffle52
 
         //void add_player(object sender, RoutedEventArgs e)
         //{
-        //    PlayerListBox.
+        //    PlayerListBox.Items.Add();
         //}
     }
 }

@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:shuffle52"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="700" d:DesignWidth="1000"
       Title="GameEditor">
 
     <Grid>
@@ -18,22 +18,22 @@
                         <ColumnDefinition Width="100"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
                         <RowDefinition />
+                        <RowDefinition Height="30"/>
                         <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
+                        <RowDefinition Height="30"/>
                         <RowDefinition />
                     </Grid.RowDefinitions>
                     <!-- Player list -->
-                    <Border Grid.Column="0" Grid.Row="0" Height="30" Background="#4E87D4">
+                    <Border Grid.Column="0" Grid.Row="0" Background="#4E87D4">
                         <Label VerticalAlignment="Center">Players</Label>
                     </Border>
                     <ListBox Name="PlayerListBox" Grid.Column="0" Grid.Row="1">
                         <ListBoxItem>Player 1</ListBoxItem>
                     </ListBox>
                     <!-- Deck list -->
-                    <Border Grid.Column="0" Grid.Row="2" Height="30" Background="#4E87D4">
+                    <Border Grid.Column="0" Grid.Row="2" Background="#4E87D4">
                         <Label VerticalAlignment="Center">Decks</Label>
                     </Border>
                     <ListBox Name="DeckListBox" Grid.Column="0" Grid.Row="3">
