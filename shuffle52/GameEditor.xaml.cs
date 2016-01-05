@@ -25,10 +25,16 @@ namespace shuffle52
             InitializeComponent();
         }
 
+        #region Designer
+
         //void add_player(object sender, RoutedEventArgs e)
         //{
         //    PlayerListBox.Items.Add();
         //}
+
+        #endregion
+
+        #region Rulebook
 
         #region checkmark-control-functions
         void club_all_check(object sender, RoutedEventArgs e)
@@ -297,6 +303,8 @@ namespace shuffle52
                 KingSpadeCheck.IsChecked = box.IsChecked;
             }
         }
+        #endregion
+
         #endregion
     }
 }
