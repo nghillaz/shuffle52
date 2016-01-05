@@ -13,45 +13,79 @@
             <TabItem Header="Designer">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="150"/>
                         <ColumnDefinition />
-                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="150"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="25"/>
                         <RowDefinition />
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="25"/>
                         <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
+                        <RowDefinition Height="30"/>
                         <RowDefinition />
                     </Grid.RowDefinitions>
                     <!-- Player list -->
-                    <Border Grid.Column="0" Grid.Row="0" Height="30" Background="#4E87D4">
-                        <Label VerticalAlignment="Center">Players</Label>
+                    <Border Grid.Column="0" Grid.Row="0" Background="#4E87D4">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Players</Label>
                     </Border>
-                    <ListBox Name="PlayerListBox" Grid.Column="0" Grid.Row="1">
-                        <ListBoxItem>Player 1</ListBoxItem>
-                    </ListBox>
+                    <!-- Add Player Button -->
+                    <Button Name="AddPlayerButton" Grid.Column="0" Grid.Row="1" Width="150" Height="25" HorizontalAlignment="Center" Click="click_add">Add Player</Button>
+                    <ListBox Name="PlayerListBox" Grid.Column="0" Grid.Row="2" SelectionChanged="select_player"></ListBox>
                     <!-- Deck list -->
-                    <Border Grid.Column="0" Grid.Row="2" Height="30" Background="#4E87D4">
-                        <Label VerticalAlignment="Center">Decks</Label>
+                    <Border Grid.Column="0" Grid.Row="3" Background="#4E87D4">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Decks</Label>
                     </Border>
-                    <ListBox Name="DeckListBox" Grid.Column="0" Grid.Row="3">
-                        <ListBoxItem>Deck 1</ListBoxItem>
-                    </ListBox>
+                    <!-- Add Deck Button -->
+                    <Button Name="AddDeckButton" Grid.Column="0" Grid.Row="4" Width="150" Height="25" HorizontalAlignment="Center" Click="click_add">Add Deck</Button>
+                    <ListBox Name="DeckListBox" Grid.Column="0" Grid.Row="5" SelectionChanged="select_deck"></ListBox>
                     <!-- Component list -->
-                    <Border Grid.Column="0" Grid.Row="4" Height="30" Background="#4E87D4">
-                        <Label VerticalAlignment="Center">Components</Label>
+                    <Border Grid.Column="0" Grid.Row="6" Height="30" Background="#4E87D4">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Components</Label>
                     </Border>
-                    <ListBox Name="ComponentListBox" Grid.Column="0" Grid.Row="5">
+                    <ListBox Name="ComponentListBox" Grid.Column="0" Grid.Row="7">
                         <ListBoxItem>Pile Group</ListBoxItem>
                         <ListBoxItem>Pile</ListBoxItem>
                         <ListBoxItem>Hand</ListBoxItem>
                     </ListBox>
                     <!-- Properties -->
                     <Border Grid.Column="2" Grid.Row="0" Height="30" Background="#4E87D4">
-                        <Label VerticalAlignment="Center">Properties</Label>
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center">Properties</Label>
                     </Border>
+                    <!-- Delete Button -->
+                    <Button Name="DeleteButton" Grid.Column="2" Grid.Row="7" Width="150" Height="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" IsEnabled="False">Delete</Button>
+                    <!-- Add Player Popup -->
+                    <Popup Name="AddPlayerPopup" Height="75" Width="200" PlacementRectangle="100,0,0,0" Placement="Right">
+                        <StackPanel>
+                            <Label Height="25" Width="200" Background="Gray">
+                                Player Name:
+                            </Label>
+                            <TextBox Name="PlayerNameTextBox" Height="25" Width="200" >
+                                 Enter Player Name Here
+                             </TextBox>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Name="AddPlayerOkayButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_add_okay">Okay</Button>
+                                <Button Name="AddPlayerCancelButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_add_cancel">Cancel</Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </Popup>
+                    <!-- Add Deck Popup -->
+                    <Popup Name="AddDeckPopup" Height="75" Width="200" PlacementRectangle="100,210,0,0" Placement="Right">
+                        <StackPanel>
+                            <Label Height="25" Width="200" Background="Gray">
+                                Deck Name:
+                            </Label>
+                            <TextBox Name="DeckNameTextBox" Height="25" Width="200" >
+                                Enter Deck Name Here
+                            </TextBox>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Name="AddDeckOkayButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_add_okay">Okay</Button>
+                                <Button Name="AddDeckCancelButton" Width="100" Height="25" HorizontalAlignment="Center" Click="click_add_cancel">Cancel</Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </Popup>
                 </Grid>
 
                 

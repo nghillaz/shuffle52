@@ -27,11 +27,65 @@ namespace shuffle52
 
         #region Designer
 
-        //void add_player(object sender, RoutedEventArgs e)
-        //{
-        //    PlayerListBox.
-        //}
+        /* handles Add buttons */
+        void click_add(object sender, RoutedEventArgs e)
+        {
+            DeleteButton.IsEnabled = false;
 
+            if ((sender as Button).Name == "AddPlayerButton")
+            {
+                AddPlayerPopup.IsOpen = true;
+            } else if ((sender as Button).Name == "AddDeckButton")
+            {
+                AddDeckPopup.IsOpen = true;
+            }
+        }
+
+        /* handles Add -- Okay buttons */
+        void click_add_okay(object sender, RoutedEventArgs e)
+        {
+            if ((sender as Button).Name == "AddPlayerOkayButton")
+            {
+                PlayerListBox.Items.Add(PlayerNameTextBox.Text);
+                AddPlayerPopup.IsOpen = false;
+            }
+            else if ((sender as Button).Name == "AddDeckOkayButton")
+            {
+                DeckListBox.Items.Add(DeckNameTextBox.Text);
+                AddDeckPopup.IsOpen = false;
+            }  
+        }
+
+        /* handles Add Player -- Cancel button */
+        void click_add_cancel(object sender, RoutedEventArgs e)
+        {
+            if ((sender as Button).Name == "AddPlayerCancelButton")
+            {
+                AddPlayerPopup.IsOpen = false;
+            }
+            else if ((sender as Button).Name == "AddDeckCancelButton")
+            {
+                AddDeckPopup.IsOpen = false;
+            }  
+        }
+
+        /* handles selecting a Player on the Player list */
+        void select_player(object sender, RoutedEventArgs e)
+        {
+            DeleteButton.IsEnabled = true;
+        }
+
+        /* handles selecting a Deck on the Deck list */
+        void select_deck(object sender, RoutedEventArgs e)
+        {
+            DeleteButton.IsEnabled = true;
+        }
+
+        /* handles the Delete button */
+        void click_delete(object sender, RoutedEventArgs e)
+        {
+
+        }
         #endregion
 
         #region Rulebook

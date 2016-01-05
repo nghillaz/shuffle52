@@ -29,8 +29,8 @@
             2
         </Label>
         <StackPanel Grid.Column="0" Grid.Row="1" >
-            <Button Margin="0,50,0,0" Width="180" Background="Lavender" FontFamily="Futura" FontSize="20" Height="65" HorizontalAlignment="Center" Click="button_click_play">Play a Game</Button>
-            <Button Margin="0,50,0,0" Width="180" Background="Lavender" FontFamily="Futura" FontSize="20" Height="65" HorizontalAlignment="Center" Click="button_click_make">Make a Game</Button>
+            <Button Margin="0,50,0,0" Width="180" Background="Lavender" FontFamily="Futura" FontSize="20" Height="65" HorizontalAlignment="Center" Click="click_play">Play a Game</Button>
+            <Button Margin="0,50,0,0" Width="180" Background="Lavender" FontFamily="Futura" FontSize="20" Height="65" HorizontalAlignment="Center" Click="click_make">Make a Game</Button>
         </StackPanel>
     </Grid>
 </Page>
