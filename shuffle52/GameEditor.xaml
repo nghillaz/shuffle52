@@ -57,7 +57,145 @@
                 
             </TabItem>
             <TabItem Header="Rulebook">
-                
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="25"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <!-- Vertical Separators -->
+                    <Rectangle Grid.Row="0" Grid.Column="1" Grid.RowSpan="14" Width="2" Fill="Gray" HorizontalAlignment="Left"/>
+                    <Rectangle Grid.Row="0" Grid.Column="2" Grid.RowSpan="14" Width="2" Fill="Gray" HorizontalAlignment="Left"/>
+                    <Rectangle Grid.Row="0" Grid.Column="3" Grid.RowSpan="14" Width="2" Fill="Gray" HorizontalAlignment="Left"/>
+                    <Rectangle Grid.Row="0" Grid.Column="4" Grid.RowSpan="14" Width="2" Fill="Gray" HorizontalAlignment="Left"/>
+                    <!-- Horizontal Separators -->
+                    <Rectangle Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="3"  Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="5"  Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="6"  Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="7"  Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="8"  Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="9"  Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="5" Height="2" Fill="Gray" VerticalAlignment="Top"/>
+                    <!-- Labels -->
+                    <Label Content="Suit:"   HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                    <Label Content="Number:" HorizontalAlignment="Left"  VerticalAlignment="Bottom"/>
+                    <!-- Numbers -->
+                    <Label Content="One"   Grid.Row="1"  HorizontalAlignment="Left"/>
+                    <Label Content="Two"   Grid.Row="2"  HorizontalAlignment="Left"/>
+                    <Label Content="Three" Grid.Row="3"  HorizontalAlignment="Left"/>
+                    <Label Content="Four"  Grid.Row="4"  HorizontalAlignment="Left"/>
+                    <Label Content="Five"  Grid.Row="5"  HorizontalAlignment="Left"/>
+                    <Label Content="Six"   Grid.Row="6"  HorizontalAlignment="Left"/>
+                    <Label Content="Seven" Grid.Row="7"  HorizontalAlignment="Left"/>
+                    <Label Content="Eight" Grid.Row="8"  HorizontalAlignment="Left"/>
+                    <Label Content="Nine"  Grid.Row="9"  HorizontalAlignment="Left"/>
+                    <Label Content="Ten"   Grid.Row="10" HorizontalAlignment="Left"/>
+                    <Label Content="Jack"  Grid.Row="11" HorizontalAlignment="Left"/>
+                    <Label Content="Queen" Grid.Row="12" HorizontalAlignment="Left"/>
+                    <Label Content="King"  Grid.Row="13" HorizontalAlignment="Left"/>
+                    <CheckBox x:Name="OneAllCheck"   Checked="one_all_check"   Unchecked="one_all_check"   Grid.Row="1" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TwoAllCheck"   Checked="two_all_check"   Unchecked="two_all_check"   Grid.Row="2" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="ThreeAllCheck" Checked="three_all_check" Unchecked="three_all_check" Grid.Row="3" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FourAllCheck"  Checked="four_all_check"  Unchecked="four_all_check"  Grid.Row="4" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FiveAllCheck"  Checked="five_all_check"  Unchecked="five_all_check"  Grid.Row="5" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SixAllCheck"   Checked="six_all_check"   Unchecked="six_all_check"   Grid.Row="6" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SevenAllCheck" Checked="seven_all_check" Unchecked="seven_all_check" Grid.Row="7" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="EightAllCheck" Checked="eight_all_check" Unchecked="eight_all_check" Grid.Row="8" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="NineAllCheck"  Checked="nine_all_check"  Unchecked="nine_all_check"  Grid.Row="9" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TenAllCheck"   Checked="ten_all_check"   Unchecked="ten_all_check"   Grid.Row="10" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="JackAllCheck"  Checked="jack_all_check"  Unchecked="jack_all_check"  Grid.Row="11" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="QueenAllCheck" Checked="queen_all_check" Unchecked="queen_all_check" Grid.Row="12" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="KingAllCheck"  Checked="king_all_check"  Unchecked="king_all_check"  Grid.Row="13" Grid.Column="0" Margin="0,2,2,0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <!-- order: clubs -> diamonds -> hearts -> spades -->
+                    <Label Content="♣" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Label Content="♦" Grid.Row="0" Grid.Column="2" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Label Content="♥" Grid.Row="0" Grid.Column="3" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Label Content="♠" Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="ClubAllCheck"    Checked="club_all_check"    Unchecked="club_all_check"    Grid.Row="0" Grid.Column="1" Margin="2,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                    <CheckBox x:Name="DiamondAllCheck" Checked="diamond_all_check" Unchecked="diamond_all_check" Grid.Row="0" Grid.Column="2" Margin="2,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                    <CheckBox x:Name="HeartAllCheck"   Checked="heart_all_check"   Unchecked="heart_all_check"   Grid.Row="0" Grid.Column="3" Margin="2,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                    <CheckBox x:Name="SpadeAllCheck"   Checked="spade_all_check"   Unchecked="spade_all_check"   Grid.Row="0" Grid.Column="4" Margin="2,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                    <!-- clubs -->
+                    <CheckBox x:Name="OneClubCheck"   Grid.Row="1"  Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TwoClubCheck"   Grid.Row="2"  Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="ThreeClubCheck" Grid.Row="3"  Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FourClubCheck"  Grid.Row="4"  Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FiveClubCheck"  Grid.Row="5"  Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SixClubCheck"   Grid.Row="6"  Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SevenClubCheck" Grid.Row="7"  Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="EightClubCheck" Grid.Row="8"  Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="NineClubCheck"  Grid.Row="9"  Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TenClubCheck"   Grid.Row="10" Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="JackClubCheck"  Grid.Row="11" Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="QueenClubCheck" Grid.Row="12" Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="KingClubCheck"  Grid.Row="13" Grid.Column="1" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <!-- diamonds -->
+                    <CheckBox x:Name="OneDiamondCheck"   Grid.Row="1"  Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TwoDiamondCheck"   Grid.Row="2"  Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="ThreeDiamondCheck" Grid.Row="3"  Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FourDiamondCheck"  Grid.Row="4"  Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FiveDiamondCheck"  Grid.Row="5"  Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SixDiamondCheck"   Grid.Row="6"  Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SevenDiamondCheck" Grid.Row="7"  Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="EightDiamondCheck" Grid.Row="8"  Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="NineDiamondCheck"  Grid.Row="9"  Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TenDiamondCheck"   Grid.Row="10" Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="JackDiamondCheck"  Grid.Row="11" Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="QueenDiamondCheck" Grid.Row="12" Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="KingDiamondCheck"  Grid.Row="13" Grid.Column="2" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <!-- hearts -->
+                    <CheckBox x:Name="OneHeartCheck"   Grid.Row="1"  Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TwoHeartCheck"   Grid.Row="2"  Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="ThreeHeartCheck" Grid.Row="3"  Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FourHeartCheck"  Grid.Row="4"  Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FiveHeartCheck"  Grid.Row="5"  Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SixHeartCheck"   Grid.Row="6"  Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SevenHeartCheck" Grid.Row="7"  Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="EightHeartCheck" Grid.Row="8"  Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="NineHeartCheck"  Grid.Row="9"  Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TenHeartCheck"   Grid.Row="10" Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="JackHeartCheck"  Grid.Row="11" Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="QueenHeartCheck" Grid.Row="12" Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="KingHeartCheck"  Grid.Row="13" Grid.Column="3" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <!-- spades -->
+                    <CheckBox x:Name="OneSpadeCheck"   Grid.Row="1"  Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TwoSpadeCheck"   Grid.Row="2"  Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="ThreeSpadeCheck" Grid.Row="3"  Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FourSpadeCheck"  Grid.Row="4"  Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="FiveSpadeCheck"  Grid.Row="5"  Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SixSpadeCheck"   Grid.Row="6"  Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="SevenSpadeCheck" Grid.Row="7"  Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="EightSpadeCheck" Grid.Row="8"  Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="NineSpadeCheck"  Grid.Row="9"  Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="TenSpadeCheck"   Grid.Row="10" Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="JackSpadeCheck"  Grid.Row="11" Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="QueenSpadeCheck" Grid.Row="12" Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="KingSpadeCheck"  Grid.Row="13" Grid.Column="4" Margin="2,2,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>
