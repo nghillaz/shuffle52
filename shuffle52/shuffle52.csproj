@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Game.cs" />
+    <Compile Include="Team.cs" />
     <Page Include="GameEditor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -75,12 +77,16 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Card.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="Deck.cs" />
     <Compile Include="GameEditor.xaml.cs">
       <DependentUpon>GameEditor.xaml</DependentUpon>
     </Compile>
     <Compile Include="GamePlayer.xaml.cs">
       <DependentUpon>GamePlayer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Hand.cs" />
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
@@ -97,6 +103,7 @@
     <Compile Include="PlaceCardCondition.xaml.cs">
       <DependentUpon>PlaceCardCondition.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

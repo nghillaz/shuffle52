@@ -73,6 +73,8 @@ namespace shuffle52
         void select_player(object sender, RoutedEventArgs e)
         {
             DeleteButton.IsEnabled = true;
+
+            CurrentItem.Content = (sender as ListBox).SelectedItem.ToString();
         }
 
         /* handles selecting a Deck on the Deck list */

@@ -15,7 +15,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="150"/>
                         <ColumnDefinition />
-                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="200"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="30"/>
@@ -54,10 +54,15 @@
                     <Border Grid.Column="2" Grid.Row="0" Height="30" Background="LightBlue">
                         <Label HorizontalAlignment="Center" VerticalAlignment="Center">Properties</Label>
                     </Border>
+                    <!-- Current Item Panel -->
+                    <StackPanel Grid.Column="2" Grid.Row="1" Orientation="Horizontal">
+                        <Label>Current Item:</Label>
+                        <Label Name="CurrentItem"></Label>
+                    </StackPanel>
                     <!-- Delete Button -->
-                    <Button Name="DeleteButton" Grid.Column="2" Grid.Row="7" Width="150" Height="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" IsEnabled="False">Delete</Button>
+                    <Button Name="DeleteButton" Grid.Column="2" Grid.Row="7" Width="200" Height="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" IsEnabled="False">Delete</Button>
                     <!-- Add Player Popup -->
-                    <Popup Name="AddPlayerPopup" Height="75" Width="200" PlacementRectangle="100,0,0,0" Placement="Right">
+                    <Popup Name="AddPlayerPopup" Height="75" Width="200" PlacementRectangle="150,0,0,0" Placement="Right">
                         <StackPanel>
                             <Label Height="25" Width="200" Background="#89c8cd">
                                 Player Name:
@@ -72,7 +77,7 @@
                         </StackPanel>
                     </Popup>
                     <!-- Add Deck Popup -->
-                    <Popup Name="AddDeckPopup" Height="75" Width="200" PlacementRectangle="100,210,0,0" Placement="Right">
+                    <Popup Name="AddDeckPopup" Height="75" Width="200" PlacementRectangle="150,210,0,0" Placement="Right">
                         <StackPanel>
                             <Label Height="25" Width="200" Background="#89c8cd">
                                 Deck Name:
@@ -88,7 +93,6 @@
                     </Popup>
                 </Grid>
 
-                
             </TabItem>
             <TabItem Header="Rulebook">
                 <Grid>
