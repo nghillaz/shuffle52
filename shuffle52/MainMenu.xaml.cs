@@ -26,7 +26,7 @@ namespace shuffle52
         }
 
         /* navigates to GamePlayer when Play button is clicked */
-        private void button_click_play(object sender, RoutedEventArgs e)
+        private void click_play(object sender, RoutedEventArgs e)
         {
             GamePlayer gamePlayer = new GamePlayer();
             this.NavigationService.Navigate(gamePlayer);
@@ -34,7 +34,7 @@ namespace shuffle52
         }
 
         /* navigates to GameEditor when Make button is clicked */
-        private void button_click_make(object sender, RoutedEventArgs e)
+        private void click_make(object sender, RoutedEventArgs e)
         {
             GameEditor gameEditor = new GameEditor();
             this.NavigationService.Navigate(gameEditor);
