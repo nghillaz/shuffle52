@@ -57,7 +57,26 @@
                 
             </TabItem>
             <TabItem Header="Rulebook">
-                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.Column="1" HorizontalAlignment="Right" Width="2" Fill="Gray"/>
+                    <Rectangle Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="2" Width="150" Fill="Gray"/>
+                    <Label  Content="Add:" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button Content="State"      Height="30" Width="60" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Margin="10,0,0,10"/>
+                    <Button Content="Transition" Height="30" Width="60" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10"/>
+                    <ScrollViewer Grid.Row="1" Margin="0,10,0,0">
+                        <StackPanel>
+                            <!-- Conditions will go here -->
+                        </StackPanel>
+                    </ScrollViewer>
+                    <Canvas VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightBlue" Margin="155,5,0,0" Width="820" Height="595"/>
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>
